@@ -3,7 +3,7 @@ name = "desy3bao"
 version = "0.0.0"
 description = "DES-Y3 + BAO cobaya likelihood nicked from cosmosis"
 authors = [{name="Adam Neil Ormondroyd", email="Adam.Ormondroyd@gmail.com"}]
-readme = README.md
+readme = "README.md"
 dependencies = ["numpy", "cobaya"]
 
 [project.urls]
