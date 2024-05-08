@@ -56,7 +56,7 @@ class DESY3BAO(Likelihood):
         d_m_fiducial = d_a_ficucial * (1 + self.redshift)
 
         # load theory distance relations and R_S
-        d_m = self.provider.get_angular_diameter_distance(self.redshift)  # Mpc
+        d_m = self.provider.get_angular_diameter_distance(dist_z)  # Mpc
         rs = self.provider.get_param("rdrag")
 
         # Interpolate the theory at the observed redshift
