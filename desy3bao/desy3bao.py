@@ -44,7 +44,7 @@ class DESY3BAO(Likelihood):
             # TODO: d_m is usually the comoving distance, but the notes say it
             # is the angular diameter distance???
             # going by the notes (and paper [https://arxiv.org/pdf/2107.04646])
-            "angular_diameter_distance": [dist_z],
+            "angular_diameter_distance": {"z": [dist_z]},
         }
 
     def logp(self, **params_values):
